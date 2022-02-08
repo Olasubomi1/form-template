@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-import "./App.css";
-
-function App() {
-  return <div className="App"></div>;
-=======
 import React, { Component } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -22,7 +16,6 @@ class App extends Component {
       </React.Fragment>
     );
   }
->>>>>>> c8a51e8 (Consumed the form templates)
 }
 
 export default App;

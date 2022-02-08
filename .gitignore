@@ -3,10 +3,6 @@
 # dependencies
 /node_modules
 /.pnp
-<<<<<<< HEAD
-=======
-/public
->>>>>>> c8a51e8 (Consumed the form templates)
 .pnp.js
 
 # testing
