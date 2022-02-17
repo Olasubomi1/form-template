@@ -20,9 +20,11 @@ class Cards extends Component {
       <div className="cardContainer">
         {this.state.forms.map((forms) => (
           <div key={forms.created} className="cards">
-            <h1>{forms.name}</h1>
-            <p>{forms.description}</p>
-            <a href={forms.link}>use template</a>
+            <h1 className="head-style">{forms.name}</h1>
+            <p className="des-style">{forms.description}</p>
+            <a className="template-style" href={forms.link}>
+              use template
+            </a>
           </div>
         ))}
       </div>
