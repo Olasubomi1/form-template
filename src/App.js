@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Cards from "./Components/Cards";
+import Home from "./Components/Home";
 import "./App.css";
 
 class App extends Component {
@@ -10,9 +10,8 @@ class App extends Component {
       <React.Fragment>
         <ToastContainer />
         <div className="App">
-          <Cards />
+          <Home />
         </div>
-        ;
       </React.Fragment>
     );
   }
