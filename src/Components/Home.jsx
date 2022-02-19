@@ -3,7 +3,6 @@ import axios from "axios";
 import Cards from "./Cards";
 import Pagination from "./common/pagination";
 import { paginate } from "../utils/paginate";
-import _ from "lodash";
 
 class Home extends Component {
   state = {
