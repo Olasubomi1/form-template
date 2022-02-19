@@ -8,7 +8,7 @@ class Home extends Component {
   state = {
     forms: [],
     currentPage: 1,
-    pageSize: 2,
+    pageSize: 2506,
     sortColumn: { path: "title", order: "asc" },
   };
 
@@ -17,7 +17,7 @@ class Home extends Component {
       "https://front-end-task-dot-result-analytics-dot-fpls-dev.uc.r.appspot.com/api/v1/public/task_templates",
       { mode: "cors" }
     );
-    this.setState({ forms, pageSize: forms.length / 12 });
+    this.setState({ forms });
   }
   handlePageChange = (page) => {
     this.setState({ currentPage: page });
@@ -38,7 +38,6 @@ class Home extends Component {
         {console.log(this.state.forms.length)}
         <Cards forms={forms} />
         <Pagination
-          pageSize={pageSize.length}
           itemsCount={totalCount}
           pageSize={pageSize}
           currentPage={currentPage}
@@ -50,7 +49,3 @@ class Home extends Component {
 }
 
 export default Home;
-
-// itemsCount={totalCount}
-// currentPage={currentPage}
-// onPageChange={this.handlePageChange}
